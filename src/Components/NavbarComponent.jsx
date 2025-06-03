@@ -18,7 +18,7 @@ const NavbarComponent = ({isDark, activeSection, setIsDark, scrollToSection}) =>
                   onClick={() => scrollToSection(section)}
                   className={`capitalize transition-all duration-300 hover:scale-105 ${
                     activeSection === section 
-                      ? `text-transparent bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text font-semibold` 
+                      ? `text-transparent bg-gradient-to-r from-[#cf0101] to-[#011ccf] bg-clip-text font-semibold` 
                       : `${isDark ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}`
                   }`}
                 >
@@ -29,8 +29,8 @@ const NavbarComponent = ({isDark, activeSection, setIsDark, scrollToSection}) =>
 
             <button
               onClick={() => setIsDark(!isDark)}
-              className={`p-3 rounded-full transition-all duration-300 hover:scale-110 ${
-                isDark ? 'bg-yellow-500 text-gray-900' : 'bg-gray-800 text-yellow-400'
+              className={`p-2 rounded-full transition-all duration-300 hover:scale-110 ${
+                isDark ? 'bg-yellow-300 text-gray-900' : 'bg-gray-800 text-yellow-300'
               }`}
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}

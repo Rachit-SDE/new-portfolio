@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedCard from '../Layout/AnimatedCard'
 import GradientText from '../Layout/GradientText'
-import { Moon, Sun, Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Code, Database, Globe, Smartphone, Server, Palette, ArrowRight, Star, Calendar, Building, Trophy, Users, Zap, Heart } from 'lucide-react';
+import { Moon, Sun, Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Code, Database, Globe, Smartphone, Server, Palette, ArrowRight, Star, Calendar, Building, Trophy, Users, Zap, Heart, Target } from 'lucide-react';
 
 const ContactUsComponent = ({isDark, isLoaded}) => {
   return (
@@ -33,17 +33,18 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
 
                 <div className="space-y-6">
                   {[
-                    { icon: Mail, label: "Email", value: "alex.chen@email.com", href: "mailto:alex.chen@email.com" },
-                    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                    { icon: MapPin, label: "Location", value: "San Francisco, CA", href: "#" },
-                    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/alexchen", href: "#" }
+                    { icon: Mail, label: "Email", value: "rachit.gour749@gmail.com", href: "mailto:rachit.gour749@gmail.com" },
+                    { icon: Phone, label: "Phone", value: "+91 9058995529", href: "tel:+91 9058995529" },
+                    { icon: MapPin, label: "Location", value: "Uttar Pradesh, India", href: "#" },
+                    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/rachit-gour", href: "https://www.linkedin.com/in/rachit-gour/",}
                   ].map((contact, index) => (
                     <a
                       key={index}
                       href={contact.href}
+                      target='blank'
                       className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:scale-105 ${isDark ? 'bg-gray-900 hover:bg-gray-700' : 'bg-white hover:bg-gray-100'} border ${isDark ? 'border-gray-700' : 'border-gray-200'}`}
                     >
-                      <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg text-white">
+                      <div className="p-3 bg-gradient-to-r from-[#222c68] to-[#6262cb] rounded-lg text-white">
                         <contact.icon size={24} />
                       </div>
                       <div>
@@ -95,7 +96,7 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
                       </label>
                       <input
                         type="text"
-                        className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
+                        className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:outline-none focus:ring-[#ff8400] focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                         placeholder="John"
                       />
                     </div>
@@ -105,7 +106,7 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
                       </label>
                       <input
                         type="text"
-                        className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
+                        className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:outline-none focus:ring-[#ff8400] focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                         placeholder="Doe"
                       />
                     </div>
@@ -117,7 +118,7 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
                     </label>
                     <input
                       type="email"
-                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
+                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:outline-none focus:ring-[#ff8400] focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                       placeholder="john@example.com"
                     />
                   </div>
@@ -128,7 +129,7 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
                     </label>
                     <input
                       type="text"
-                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
+                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:outline-none focus:ring-[#ff8400] focus:border-transparent ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                       placeholder="Project Discussion"
                     />
                   </div>
@@ -139,14 +140,14 @@ const ContactUsComponent = ({isDark, isLoaded}) => {
                     </label>
                     <textarea
                       rows={6}
-                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
+                      className={`w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#ff8400] focus:border-transparent resize-none ${isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                       placeholder="Tell me about your project..."
                     ></textarea>
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group"
+                    className="w-full py-4 bg-gradient-to-r from-[#0b014f] to-[#325991] text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group"
                   >
                     Send Message
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

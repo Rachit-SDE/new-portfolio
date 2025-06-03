@@ -19,10 +19,10 @@ const ExprienceComponent = ({isDark, isLoaded}) => {
             </div>
           </AnimatedCard>
 
-          <div className="space-y-8">
+          <div className="space-y-8 flex justify-between flex-col items-center">
             {experiences.map((exp, index) => (
               <AnimatedCard key={index} delay={index * 200 + 200} isLoaded={isLoaded}>
-                <div className={`relative p-8 rounded-[9px] ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-xl hover:scale-[1.02] transition-all duration-300 border ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
+                <div className={`relative p-8 rounded-[9px] ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-xl hover:scale-[1.02] transition-all duration-300 max-w-[1000px] ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
                   <div className="absolute top-0 left-0 w-full  h-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-t-[10px]"></div>
                   
                   <div className="grid lg:grid-cols-4 gap-6">
@@ -41,7 +41,7 @@ const ExprienceComponent = ({isDark, isLoaded}) => {
                       <h3 className={`text-xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                         {exp.title}
                       </h3>
-                      <p className={`text-lg mb-4 ${isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
+                      <p className={`text-[14px] mb-4 ${isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
                         {exp.description}
                       </p>
                       
@@ -50,10 +50,10 @@ const ExprienceComponent = ({isDark, isLoaded}) => {
                           <Trophy size={16} className="text-yellow-500" />
                           Key Achievements:
                         </h4>
-                        <ul className="space-y-1">
+                        <ul className="space-y-1 text-[12px]">
                           {exp.achievements.map((achievement, i) => (
                             <li key={i} className={`flex items-start gap-2 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                              <Star size={14} className="text-yellow-500 mt-1 flex-shrink-0" />
+                              <Star size={12} className="text-yellow-500 mt-1 flex-shrink-0" />
                               {achievement}
                             </li>
                           ))}

@@ -20,18 +20,17 @@ const ProjectsComponent = ({isDark, isLoaded}) => {
             </div>
           </AnimatedCard>
 
-          <div className="grid md:grid-cols-2 gap-8 px-[50px]" >
+          <div className="flex flex-wrap justify-center gap-8 px-4 py-2 sm:px-6 md:px-8 overflow-x-auto ">
             {projects.map((project, index) => (
               <AnimatedCard key={index} delay={index * 200 + 200} isLoaded={isLoaded}>
-                <div className={`group max-w-[450px] rounded-2xl overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-50'} hover:scale-[1.02] transition-all duration-300 border ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
-                  <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center text-6xl relative overflow-hidden`}>
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <span className="relative z-10">{project.image}</span>
+                <div className={`group w-[300px] sm:w-[550px] lg:w-[440px] xl:w-[560px] flex flex-col min-h-0 rounded-2xl overflow-hidden  ${isDark ? 'bg-gray-800' : 'bg-gray-50'} hover:scale-[1.02] transition-all duration-300 border ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
+                  <div className={`flex items-center justify-center text-6xl relative overflow-hidden `}>
+                    <img src={project.image} className="relative w-full  object-cover" alt="" />
                     <div className="absolute top-4 right-4 flex gap-2">
-                      <a href={project.github} className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300">
+                      <a href={project.github} target='blank' className="p-[6px] sm:p-[2px] h-[30px] w-[30px] sm:w-[40px] sm:h-[40px] flex justify-center items-center bg-gray-400/30 backdrop-blur-sm rounded-full text-black transition-all duration-300">
                         <Github size={20} />
                       </a>
-                      <a href={project.live} className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all duration-300">
+                      <a href={project.live} target='blank' className="p-[6px] sm:p-[2px] h-[30px] w-[30px] sm:w-[40px] sm:h-[40px] flex justify-center items-center bg-gray-400/30 backdrop-blur-sm rounded-full text-black transition-all duration-300">
                         <ExternalLink size={20} />
                       </a>
                     </div>
@@ -54,11 +53,11 @@ const ProjectsComponent = ({isDark, isLoaded}) => {
                     </div>
                     
                     <div className="flex gap-4">
-                      <a href={project.github} className="flex items-center gap-2 text-cyan-500 hover:text-cyan-600 font-medium transition-colors duration-300">
+                      <a href={project.github} target='blank' className="flex items-center gap-2 text-cyan-500 hover:text-cyan-600 font-medium transition-colors duration-300">
                         <Github size={18} />
                         Code
                       </a>
-                      <a href={project.live} className="flex items-center gap-2 text-cyan-500 hover:text-cyan-600 font-medium transition-colors duration-300">
+                      <a href={project.live} target='blank' className="flex items-center gap-2 text-cyan-500 hover:text-cyan-600 font-medium transition-colors duration-300">
                         <ExternalLink size={18} />
                         Live Demo
                       </a>

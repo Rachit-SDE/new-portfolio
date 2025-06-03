@@ -23,10 +23,10 @@ const AboutComponent = ({isDark, isLoaded}) => {
                   Crafting Digital Experiences with Code
                 </h3>
                 <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                  I'm a passionate Software Development Engineer with over 5 years of experience building scalable web applications and innovative solutions. My journey in tech started with a curiosity about how things work, and it has evolved into a deep passion for creating software that makes a real impact.
+                I'm a dedicated Software Development Engineer driven by a passion for crafting scalable web applications and impactful digital solutions. What began as a curiosity about technology has grown into a commitment to building software that solves real-world problems with efficiency and elegance.
                 </p>
                 <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                  I specialize in full-stack development with expertise in React, Node.js, Python, and cloud technologies. I believe in writing clean, maintainable code and following best practices to deliver high-quality solutions.
+                  My expertise lies in full-stack development, with a strong focus on React, Node.js, Python, and cloud-native technologies. I prioritize clean, maintainable code and follow industry best practices to deliver robust, high-quality solutions that scale.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6 pt-6">
@@ -37,7 +37,7 @@ const AboutComponent = ({isDark, isLoaded}) => {
                     { icon: Heart, label: "Passion", desc: "Love for continuous learning" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="p-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg text-white">
+                      <div className="p-2 bg-[#ff8000] rounded-lg text-white">
                         <item.icon size={20} />
                       </div>
                       <div>

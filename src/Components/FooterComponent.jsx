@@ -9,11 +9,11 @@ const FooterComponent = ({isDark, isLoaded}) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-2xl font-bold">
-              <GradientText>Alex Chen</GradientText>
+              <GradientText>Rachit Gour</GradientText>
             </div>
             
             <div className={`text-center ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+              <p>&copy; 2024 Rachit Gour. All rights reserved.</p>
             </div>
             
             <div className="flex gap-4">

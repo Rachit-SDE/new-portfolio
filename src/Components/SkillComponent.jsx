@@ -49,12 +49,12 @@ const SkillComponent = ({isDark, isLoaded}) => {
           <AnimatedCard delay={600} isLoaded={isLoaded}>
             <div className="mt-16 grid md:grid-cols-3 gap-8">
               {[
-                { icon: Globe, title: "Frontend", techs: ["React", "Vue.js", "Angular", "TypeScript", "Tailwind CSS"] },
-                { icon: Server, title: "Backend", techs: ["Node.js", "Python", "Express", "Django", "PostgreSQL"] },
-                { icon: Database, title: "DevOps", techs: ["AWS", "Docker", "Kubernetes", "CI/CD", "MongoDB"] }
+                { icon: Globe, title: "Frontend", techs: ["React", "Electron", "Tailwind", "TypeScript", "JavaScript"] },
+                { icon: Server, title: "Backend", techs: ["Node.js", "Python", "Express", "PostgreSQL"] },
+                { icon: Database, title: "DevOps", techs: ["Docker", "Kubernetes", "CI/CD", "MongoDB"] }
               ].map((category, index) => (
                 <div key={category.title} className={`p-6 rounded-2xl ${isDark ? 'bg-gray-800' : 'bg-gray-50'} text-center hover:scale-105 transition-all duration-300`}>
-                  <div className="inline-flex p-4 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full text-white mb-4">
+                  <div className="inline-flex p-4 bg-gradient-to-r from-[#38389e] to-[#8787e4] rounded-full text-white mb-4">
                     <category.icon size={32} />
                   </div>
                   <h3 className={`text-xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
