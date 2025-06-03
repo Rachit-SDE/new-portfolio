@@ -41,7 +41,7 @@ const HeaderComponent = ({ isDark, isLoaded }) => {
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="/RACHIT_GOUR_RESUME.pdf"
+                  href="RACHIT_GOUR_RESUME.pdf"
                   download="RACHIT_GOUR_RESUME.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
