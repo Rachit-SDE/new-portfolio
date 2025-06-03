@@ -5,7 +5,7 @@ import { Code, Users, Zap, Heart } from 'lucide-react';
 
 const AboutComponent = ({isDark, isLoaded}) => {
   return (
-    <section id="about" className={`py-20 ${isDark ? 'bg-gray-800' : 'bg-gray-50'}`}>
+    <section id="about" className={`py-20 ${isDark ? 'bg-gray-850' : 'bg-gray-50'}`}>
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedCard delay={100} isLoaded={isLoaded}>
             <div className="text-center mb-16">
