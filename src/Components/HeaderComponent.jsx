@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedCard from '../Layout/AnimatedCard'
 import GradientText from '../Layout/GradientText'
+import Resume from '../../public/RACHIT_GOUR_RESUME.pdf'
 import { Github, Linkedin, Twitter, Mail, Download, ArrowRight, } from 'lucide-react';
 import lightWhatsapp from '../assets/whatsappLight.png'
 import darkWhatsapp from '../assets/whatsappDark.png'
@@ -41,8 +42,8 @@ const HeaderComponent = ({ isDark, isLoaded }) => {
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="RACHIT_GOUR_RESUME.pdf"
-                  download="RACHIT_GOUR_RESUME.pdf"
+                  href={Resume}
+                  download="rachit_gour_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h-[50px] px-[20px] bg-gradient-to-r from-[#272a42] to-[#300482] text-white rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center gap-2"
