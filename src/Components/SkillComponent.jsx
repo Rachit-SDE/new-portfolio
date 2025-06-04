@@ -20,10 +20,10 @@ const SkillComponent = ({isDark, isLoaded}) => {
             </div>
           </AnimatedCard>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 p-[100px] ">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 p-[10px] sm:p-[100px] ">
             {skills.map((skill, index) => (
               <AnimatedCard key={skill.name} delay={index * 100 + 200} isLoaded={isLoaded}>
-                <div className={`p-4 rounded-2xl ${isDark ? 'bg-gray-800' : 'bg-gray-50 custom-shadow shadow-[#cccccc]' } hover:scale-105 transition-all duration-300 group cursor-pointer border ${isDark ? 'border-gray-700 hover:border-orange-500' : 'border-gray-200 hover:border-orange-600'}`}>
+                <div className={`p-7 rounded-2xl ${isDark ? 'bg-gray-800' : 'bg-gray-50 custom-shadow shadow-[#cccccc]' } hover:scale-105 transition-all duration-300 group cursor-pointer border ${isDark ? 'border-gray-700 hover:border-orange-500' : 'border-gray-200 hover:border-orange-600'}`}>
                   <div className="text-center">
                     <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                       {skill.icon}
