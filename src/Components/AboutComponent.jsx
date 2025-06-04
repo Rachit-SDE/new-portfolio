@@ -55,9 +55,9 @@ const AboutComponent = ({isDark, isLoaded}) => {
                 <div className={`p-8 rounded-2xl ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-2xl border ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
                   <div className="grid grid-cols-2 gap-6">
                     {[
-                      { number: "50+", label: "Projects Completed", icon: "🎯" },
-                      { number: "5+", label: "Years Experience", icon: "⏰" },
-                      { number: "20+", label: "Technologies", icon: "💻" },
+                      { number: "10+", label: "Projects Completed", icon: "🎯" },
+                      { number: "1+", label: "Years Experience", icon: "⏰" },
+                      { number: "10+", label: "Technologies", icon: "💻" },
                       { number: "100%", label: "Client Satisfaction", icon: "⭐" }
                     ].map((stat, index) => (
                       <div key={index} className="text-center">

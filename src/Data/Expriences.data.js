@@ -14,7 +14,7 @@ export const experiences = [
     {
       title: "MERN Developer Trainee",
       company: "GeeksforGeeks",
-      period: "Apr-2025 - Present",
+      period: "Jul-2024 - Oct-2024",
       description: "Gained hands-on experience in full-stack development using MongoDB, Express.js, React.js, and Node.js. Worked on real-world projects, improving skills in clean coding, performance optimization, version control (Git), and agile workflows.",
       achievements: [
         "Built RESTful APIs using Node.js and Express.js with MongoDB as the backend.",
